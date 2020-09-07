@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./portfolio-css/normalize.css" />
+    <link rel="stylesheet" href="./dist/css/portfolio.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Web studio portfolio</title>
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header>
+      <div class="conteiner flexbox">
+        <a class="logo" href="#">
+          <p class="header-main-icon">
+            <span class="logo-word">Web</span> Studio
+          </p>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-menu-list">
+              <!-- <div class="header-line"> -->
+              <a class="header-menu-item" href="./index.html">Студия</a>
+              <!-- </div> -->
+            </li>
+            <li class="header-menu-list">
+              <div class="header-line">
+                <a class="header-menu-item portfolio" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </div>
+            </li>
+            <li class="header-menu-list">
+              <a class="header-menu-item" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="header-contact header-list">
+            <li class="header-menu-list">
+              <a class="header-contact-item" href="#">
+                <svg class="header-icon-contact" width="16" height="12">
+                  <use href="./image/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header-menu-list">
+              <a class="header-contact-item" href="tel:+380961111111">
+                <svg class="header-icon-contact" width="10" height="15">
+                  <use href="./image/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <!-- Наші роботи -->
+        <div class="conteiner">
+          <h1 hidden class=".visually-hidden">Portfolio</h1>
+          <nav class="btn-nav">
+            <ul class="btn-list">
+              <li class="btn-item">
+                <button class="btn-portfolio" type="button">Все</button>
+              </li>
+              <li class="btn-item">
+                <button class="btn-portfolio" type="button">Веб-сайты</button>
+              </li>
+              <li class="btn-item">
+                <button class="btn-portfolio" type="button">Приложения</button>
+              </li>
+              <li class="btn-item">
+                <button class="btn-portfolio" type="button">Дизайн</button>
+              </li>
+              <li class="btn-item">
+                <button class="btn-portfolio" type="button">Маркетинг</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section>
+        <div class="conteiner">
+          <ul class="content">
+            <li class="content-list">
+              <a class="link" href="">
+                <div class="box-foto">
+                  <img
+                    src="./portfolio-imeg/img1.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="box-hover">
+                    <p class="text-hover">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="title-box">
+                  <h2 class="title">Технокряк</h2>
+                  <p class="title-second">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="content-list">
+              <a class="link" href="">
+                <div class="box-foto">
+                  <img
+                    src="./portfolio-imeg/img2.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="box-hover">
+                    <p class="text-hover">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="title-box">
+                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                  <p class="title-second">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="content-list">
+              <a class="link" href="">
+                <div class="box-foto">
+                  <img
+                    src="./portfolio-imeg/img3.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="box-hover">
+                    <p class="text-hover">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="title-box">
+                  <h2 class="title">Ресторан Seafood</h2>
+                  <p class="title-second">Приложениет</p>
+                </div>
+                <!-- <p hidden class=".visually-hidden">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident ea tempora consequuntur, aperiam tenetur delectus
+                  laudantium beatae obcaecati numquam distinctio sed eos et
+                  optio doloremque praesentium, iste aspernatur omnis quam?
+                </p> -->
+              </a>
+            </li>
+            <li class="content-list">
+              <a class="link" href="">
+                <div class="box-foto">
+                  <img
+                    src="./portfolio-imeg/img4.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="box-hover">
+                    <p class="text-hover">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="title-box">
+                  <h2 class="title">Проект Prime</h2>
+                  <p class="title-second">Маркетинг</p>
+                </div>
+                <!-- <p hidden class=".visually-hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium voluptates dolorem nulla tempora fugit ducimus
+                  libero laborum aliquam excepturi deleniti deserunt, quam magni
+                  nostrum quos, veritatis maxime! Nihil, commodi quaerat.
+                </p> -->
+              </a>
+            </li>
+            <li class="content-list">
+              <a class="link" href="">
+                <div class="box-foto">
+                  <img
+                    src="./portfolio-imeg/img5.jpg"
+                    alt="Проект Boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="box-hover">
+                    <p class="text-hover">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <!-- 
+                /> -->
+                <div class="title-box">
+                  <h2 class="title">Проект Boxes</h2>
+                  <p class="title-second">Приложениет</p>
+                </div>
+                <!-- <p hidden class=".visually-hidden">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  voluptatibus tenetur eaque sint quos laudantium velit debitis,
+                  ullam incidunt, deleniti inventore nesciunt exercitationem
+                  dicta, cum sit quaerat mollitia molestias porro.
+                </p> -->
+              </a>
+            </li>
+            <li class="content-list">
+              <a class="link" href="">
+                <div class="box-foto">
+                  <img
+                    src="./portfolio-imeg/img6.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="box-hover">
+                    <p class="text-hover">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <!-- 
+                /> -->
+                <div class="title-box">
+                  <h2 class="title">Inspiration has no Borders</h2>
+                  <p class="title-second">Веб-сайт</p>
+                </div>
+                <!-- <p hidden class=".visually-hidden">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perferendis eos est enim, dignissimos quod libero laborum
+                  consequuntur ut numquam fuga qui nemo ratione labore. Veniam
+                  quia minus dolores enim eveniet.
+                </p> -->
+              </a>
+            </li>
+            <li class="content-list">
+              <a class="link" href="">
+                <div class="box-foto">
+                  <img
+                    src="./portfolio-imeg/img7.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="box-hover">
+                    <p class="text-hover">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <!-- 
+                /> -->
+                <div class="title-box">
+                  <h2 class="title">Издание Limited Edition</h2>
+                  <p class="title-second">Дизайн</p>
+                </div>
+                <!-- <p hidden class=".visually-hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora, minus sit. Placeat necessitatibus odit error suscipit
+                  vitae a saepe impedit! Ea ab harum vitae minima impedit
+                  explicabo libero enim minus!
+                </p> -->
+              </a>
+            </li>
+            <li class="content-list">
+              <a class="link" href="">
+                <div class="box-foto">
+                  <img
+                    src="./portfolio-imeg/img8.jpg"
+                    alt="Проект LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="box-hover">
+                    <p class="text-hover">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <!-- 
+                /> -->
+                <div class="title-box">
+                  <h2 class="title">Проект LAB</h2>
+                  <p class="title-second">Маркетинг</p>
+                </div>
+                <!-- <p hidden class=".visually-hidden">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+                  obcaecati molestiae quod alias quam autem reprehenderit fugiat
+                  voluptatum laboriosam totam? Consequatur alias repellendus
+                  debitis omnis cupiditate necessitatibus reiciendis perferendis
+                  quos?
+                </p> -->
+              </a>
+            </li>
+            <li class="content-list">
+              <a class="link" href="#">
+                <div class="box-foto">
+                  <img src="./portfolio-imeg/img9.jpg" alt="Growing Business" />
+                  <div class="box-hover">
+                    <p class="text-hover">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="title-box">
+                  <h2 class="title">Growing Business</h2>
+                  <p class="title-second">Приложение</p>
+                </div>
+                <!-- <p hidden class=".visually-hidden">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sequi, accusantium cumque, magnam error cupiditate saepe iusto
+                  libero natus magni rerum id voluptates minus. Temporibus
+                  voluptates sapiente nobis eligendi, illo earum.
+                </p> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Футер -->
+    <div class="footer-backgraund-dark">
+      <footer class="conteiner flexbox">
+        <div class="footer-section">
+          <a class="logo" href="#">
+            <p class="footer-icon"><span class="logo-word">Web</span> Studio</p>
+          </a>
+          <address>
+            г. Киев, пр-т Леси Украинки, 26 <br />
+            <a class="address-contact" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+            <a class="address-contact" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </address>
+        </div>
+        <!-- соц. мережі -->
+        <div class="footer-section">
+          <p class="footer-subscribe">присоединяйтесь</p>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ссилка на  instagram"
+              >
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./image/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ссилка на twitter"
+              >
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./image/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ссилка на facebook"
+              >
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./image/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ссилка на linkedin"
+              >
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./image/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <p class="footer-subscribe">Подпишитесь на рассылку</p>
+          <form class="footer-form" action="#">
+            <input class="footer-email" type="text" placeholder="E-mail" />
+            <div class="subscribe-footer">
+              <button class="btn-footer">
+                Подписаться
+                <svg
+                  class="subscribe-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

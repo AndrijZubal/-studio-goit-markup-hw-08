@@ -1,0 +1,79 @@
+.header-list,
+.header-contact {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.header-main-icon {
+  margin: 0px;
+  padding-right: 80px;
+}
+
+.header-menu-item {
+  text-decoration: none;
+
+  &:hover:not(.studio),
+  &:focus {
+    color: $accent-color;
+  }
+  &:not(.studio) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+
+.header-nav {
+  padding: 32px 0px;
+  align-items: baseline;
+}
+
+.header-menu-list {
+  position: relative;
+
+  &:not(:last-child) {
+    padding-right: 50px;
+  }
+  &:hover .header-contact-item,
+  &:hover .header-icon-contact {
+    fill: $accent-color;
+    color: $accent-color;
+  }
+}
+.header-line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 50px;
+  bottom: -32px;
+  height: 4px;
+  background-color: $accent-color;
+}
+
+.header-contact {
+  margin-left: 331px;
+  list-style: none;
+}
+
+.header-contact-item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.studio {
+  color: $accent-color;
+}
+
+.header-icon-contact {
+  fill: $dark-color;
+  margin-right: 10px;
+}

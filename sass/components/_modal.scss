@@ -1,0 +1,158 @@
+.bagdrop {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  background: rgba(47, 48, 58, 0.9);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 528px;
+  background-color: $wite-color;
+}
+.btn-close {
+  position: absolute;
+  padding: 0;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.cross {
+  fill: $dark-color;
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+.modal-text {
+  color: $dark-color;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+.bagdrop.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+/* modal поля вводу */
+.forma-info {
+  margin: 12px 40px;
+}
+.info {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border-radius: 4px;
+  border: 1px solid $main-color;
+  z-index: 0;
+
+  &:focus + .icon,
+  &:focus {
+    outline: none;
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.info-massege {
+  margin-bottom: 4px;
+  width: 100%;
+  resize: none;
+}
+.massege:focus-within > .massege-label {
+  color: $accent-color;
+}
+
+.info-massege:focus {
+  outline: none;
+  border: 1px solid $accent-color;
+}
+.icon-modal {
+  position: relative;
+  margin-right: 40px;
+
+  &:focus-within > .input-label {
+    color: $accent-color;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 65%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0;
+  fill: $dark-color;
+  z-index: 50;
+}
+
+.modal-paragraf {
+  font-size: 14px;
+  line-height: 24px;
+}
+.modal-link {
+  color: $accent-color;
+}
+
+.container-modal {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+  &:checked ~ .checkmark {
+    background-color: $accent-color;
+  }
+
+  &:checked ~ .checkmark:after {
+    display: block;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: $wite-color;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+
+.container:hover input ~ .checkmark {
+  background-color: $wite-color;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+}

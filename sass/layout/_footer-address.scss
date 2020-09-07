@@ -1,0 +1,46 @@
+.footer-backgraund-dark {
+  background: #2f303a;
+}
+
+.footer-section:not(:last-child) {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+}
+
+.footer-icon {
+  padding: 0px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+address {
+  font-size: 14px;
+  line-height: 1.714;
+  color: $wite-color;
+  font-style: normal;
+}
+
+.address-link {
+  font-size: 14px;
+  line-height: 1, 714;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address-contact {
+  text-decoration: none;
+  display: block;
+
+  font-size: 14px;
+  line-height: 1.714;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover {
+    color: $accent-color;
+  }
+}

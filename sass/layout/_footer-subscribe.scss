@@ -1,0 +1,52 @@
+.footer-subscribe {
+  margin-top: 72px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $wite-color;
+}
+.btn-footer {
+  display: flex;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  padding: 10px 0 10px 29px;
+  width: 200px;
+  height: 53px;
+  justify-content: flex-end;
+
+  line-height: 1.714;
+  color: $wite-color;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.subscribe-icon {
+  margin: 13px 28px 13px 10px;
+  fill: $wite-color;
+}
+
+.footer-form {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-email {
+  border-radius: 4px;
+  border: 1px solid $main-color;
+  background: transparent;
+  margin-right: 12px;
+  padding: 0 0 0 16px;
+  color: $wite-color;
+  width: 358px;
+  height: 50px;
+  display: flex;
+  align-items: baseline;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+}

@@ -1,0 +1,49 @@
+.team {
+  display: flex;
+  width: calc((100% - 30px * 3) / 4);
+  padding: 0px;
+  margin-bottom: 94px;
+  list-style: none;
+
+  // width: 450px;
+}
+
+.team-bg {
+  background-color: $ocupation-bg;
+
+  // width: 480px;
+}
+
+// .team-foto {
+//   width: 450px;
+//   height: 460px;
+// }
+
+.team-list {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-item {
+  margin: 30px 0 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  color: $dark-color;
+}
+
+.team-profesion {
+  margin: 0 0 16px;
+
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  color: $main-color;
+}
