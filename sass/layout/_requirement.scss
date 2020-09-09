@@ -1,24 +1,64 @@
 .requirement {
-  display: flex;
-  margin: 94px 0;
   padding: 0px;
   list-style: none;
-}
+  margin: 94px 0;
 
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
 .icon-requirement {
-  padding: 25px 101px;
+  padding: 25px 0px;
   background: $ocupation-bg;
   border-radius: 4px;
+  width: 100%;
+  height: 120px;
+
+  @include for-size(desktop) {
+    padding: 25px 101px;
+    background: $ocupation-bg;
+    border-radius: 4px;
+  }
+}
+.requirement-item {
+  box-sizing: border-box;
+  width: 450px;
+  margin-bottom: 30px;
+
+  @include for-size(tablet-landscape) {
+    width: 339px;
+    margin-left: 30px;
+  }
+
+  @include for-size(desktop) {
+    width: 265px;
+  }
 }
 
-.requirement-item:not(:last-child) {
-  margin-right: 30px;
+.requirement-item:not(:first-child) {
+  @include for-size(desktop) {
+    margin-left: 25px;
+  }
 }
 
 .requirement-title {
-  margin: 30px 0 10px;
-}
+  @include for-size(tablet-portraite) {
+    text-align: center;
+  }
 
+  @include for-size(desktop) {
+    margin: 30px 0 10px;
+  }
+}
 .requirement-paragraf {
-  margin: 0px;
+  // width: 450px;
+
+  @include for-size(desktop) {
+    margin: 0px;
+  }
 }

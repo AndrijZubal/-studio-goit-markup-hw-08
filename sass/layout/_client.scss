@@ -1,19 +1,50 @@
 .client {
-  display: flex;
-  width: calc((100% - 30px * 5) / 6);
   padding: 0px;
   margin-bottom: 94px;
   list-style: none;
+
   display: flex;
-  width: calc((100% - 30px) / 2);
+  flex-wrap: wrap;
+  // margin-right: 30px;
+
+  @include for-size(desktop) {
+    display: flex;
+    // width: calc((100% - 30px * 5) / 6);
+  }
 }
 
 .client-icon {
   fill: $icon-client-color;
 }
+.client-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+// @include for-size(tablet-landscape) {
+// }
+
+// @include for-size(tablet-portraite) {
+//   margin-right: 30px;
+//   margin-bottom: 30px;
+// }
+
+.client-item:nth-last-child(odd) {
+  @include for-size(tablet-portrait) {
+    margin-right: 0px;
+  }
+}
+
+.client-item {
+  @include for-size(tablet-landscape) {
+    margin-right: 30px;
+  }
+}
 
 .client-item:not(:last-child) {
-  margin-right: 30px;
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
 }
 
 .client-link {

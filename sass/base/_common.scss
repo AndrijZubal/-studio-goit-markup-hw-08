@@ -9,19 +9,36 @@
   width: 1px !important;
   overflow: hidden;
 }
+* {
+  box-sizing: border-box;
+}
 
 .conteiner {
   position: relative;
-  width: 1200px;
+  width: 450px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  @include for-size(tablet-portraite) {
+    width: 450px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 
 .flexbox,
 .header-nav {
-  display: flex;
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 
 body {

@@ -6,6 +6,21 @@
   text-transform: uppercase;
   color: $wite-color;
 }
+.footer-backgraund-dark {
+  padding: 1px;
+}
+.footer-section {
+  @include for-size(tablet-landscape) {
+    display: inline-block;
+  }
+}
+
+.footer-section:first-child {
+  @include for-size(tablet-landscape) {
+    margin-right: 160px;
+  }
+}
+
 .btn-footer {
   display: flex;
   margin-bottom: 40px;
@@ -21,6 +36,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 
 .subscribe-icon {
@@ -29,8 +49,14 @@
 }
 
 .footer-form {
-  display: flex;
-  align-items: baseline;
+  @include for-size(tablet-landscape) {
+    display: block;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-email {
@@ -40,13 +66,21 @@
   margin-right: 12px;
   padding: 0 0 0 16px;
   color: $wite-color;
-  width: 358px;
   height: 50px;
-  display: flex;
-  align-items: baseline;
+  width: 100%;
 
-  &:focus {
-    outline: none;
-    border: 1px solid $accent-color;
+  @include for-size(tablet-landscape) {
+    width: 450px;
+  }
+
+  @include for-size(desktop) {
+    width: 358px;
+    display: flex;
+    align-items: baseline;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $accent-color;
+    }
   }
 }

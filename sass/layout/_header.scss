@@ -1,12 +1,17 @@
 .header-list,
 .header-contact {
-  display: flex;
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
+  display: none;
+
+  @include for-size(desktop) {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+  }
 }
 
 .header-main-icon {
+  position: relative;
   margin: 0px;
   padding-right: 80px;
 }
@@ -56,7 +61,7 @@
 }
 
 .header-contact {
-  margin-left: 331px;
+  margin-left: 288px;
   list-style: none;
 }
 

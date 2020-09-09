@@ -3,12 +3,14 @@
   padding: 0px;
   display: flex;
   list-style: none;
+  justify-content: center;
 }
+
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
 .footer-social-icon {
-  padding: 12px;
+  // padding: 12px;
   fill: $wite-color;
 }
 .footer-social-link {

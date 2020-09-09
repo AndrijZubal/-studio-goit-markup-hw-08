@@ -1,4 +1,9 @@
-.header-list,
+.header-list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
 .header-contact {
   display: flex;
   padding: 0px;
@@ -30,6 +35,7 @@
 .header-nav {
   padding: 32px 0px;
   align-items: baseline;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -56,10 +62,9 @@
   background-color: $accent-color;
 }
 
-.header-contact {
-  margin-left: 328px;
-  list-style: none;
-}
+// .header-contact {
+//   margin-left: 288px;
+// }
 
 .header-contact-item {
   text-decoration: none;

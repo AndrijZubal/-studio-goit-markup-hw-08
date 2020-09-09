@@ -1,10 +1,16 @@
 .footer-backgraund-dark {
   background: #2f303a;
 }
+.footer-section {
+  display: block;
+  text-align-last: center;
+}
 
 .footer-section:not(:last-child) {
-  width: calc((100% - 30px * 2) / 3);
-  margin-right: 30px;
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+  }
 }
 
 .footer-icon {
