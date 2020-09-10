@@ -1,3 +1,18 @@
+.icon-menu{
+position: absolute;
+  right: 22px;
+  top:22px;
+
+  &:hover .menu{
+    fill:$accent-color
+  }
+
+   @include for-size(desktop) {
+     display: none;}
+
+}
+
+
 .header-list,
 .header-contact {
   display: none;
@@ -12,6 +27,7 @@
 
 .header-main-icon {
   position: relative;
+  top:16px;
   margin: 0px;
   padding-right: 80px;
 }

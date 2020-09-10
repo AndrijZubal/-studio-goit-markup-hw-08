@@ -18,16 +18,31 @@
 .content-list {
   list-style: none;
 
+  @include for-size(tablet-landscape) {
+    display: inline-flex;
+  }
+  &:nth-child(odd) {
+  @include for-size(tablet-landscape) {
+    margin-right: 30px;
+  }
+
+
   @include for-size(desktop) {
     width: calc((100% - 30px * 2) / 3);
     margin-right: 30px;
   }
 }
+
+
 .box-foto {
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
+
+  @include for-size(tablet-landscape) {
+    width: 350px;
+  }
 }
 .box-hover {
   position: absolute;
@@ -48,6 +63,10 @@
 
 .title-box {
   width: 370px;
+
+  @include for-size(tablet-landscape) {
+    width: 350px;
+  }
 }
 .text-hover {
   padding: 63px 24px;

@@ -41,6 +41,10 @@
   transform: translate(-50%, 0);
   margin-top: 20px;
   margin-bottom: 70px;
+
+  @include for-size(tablet-landscape) {
+    transform: translate(-25%, 0);
+  }
 }
 
 .subscribe-icon {
@@ -51,6 +55,7 @@
 .footer-form {
   @include for-size(tablet-landscape) {
     display: block;
+    margin-left: 400px;
   }
 
   @include for-size(desktop) {
@@ -74,7 +79,7 @@
   }
 
   @include for-size(desktop) {
-    width: 358px;
+    width: 330px;
     display: flex;
     align-items: baseline;
 

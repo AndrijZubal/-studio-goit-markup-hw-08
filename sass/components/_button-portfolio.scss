@@ -18,11 +18,16 @@
 }
 
 .btn-list {
-  justify-content: center;
   display: flex;
   margin: 0px;
   padding: 0px;
   list-style: none;
+  flex-wrap: wrap;
+
+  @include for-size(desktop) {
+      justify-content: center;
+  }
+
 }
 
 .btn-item {
