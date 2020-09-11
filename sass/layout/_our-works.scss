@@ -22,22 +22,21 @@
     display: inline-flex;
   }
   &:nth-child(odd) {
-  @include for-size(tablet-landscape) {
-    margin-right: 30px;
+    @include for-size(tablet-landscape) {
+      margin-right: 30px;
+    }
   }
-  }
-.content-list {
+
   @include for-size(desktop) {
-    // width: calc((100% - 30px * 2) / 3);
-    margin: 15px;
+    width: calc((100% - 30px * 2) / 3);
+    margin: 0px;
   }
   &:nth-child(3n) {
-  @include for-size(desktop) {
-    margin-right: 0px;
+    @include for-size(desktop) {
+      margin-right: 0px;
+    }
   }
-
 }
-
 
 .box-foto {
   position: relative;
@@ -97,4 +96,5 @@ h2 {
   color: $main-color;
 }
 .link {
-  text-decoration: none;}
+  text-decoration: none;
+}

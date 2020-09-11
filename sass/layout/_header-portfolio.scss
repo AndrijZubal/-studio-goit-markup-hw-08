@@ -1,7 +1,7 @@
 .icon-menu {
   position: absolute;
-  right: 22px;
-  top: 22px;
+  right: 15px;
+  top: 15px;
 
   &:hover .menu {
     fill: $accent-color;
@@ -40,8 +40,16 @@
 }
 
 .header-main-icon {
-  margin: 0px;
+  margin-top: 16px;
   padding-right: 80px;
+
+  @include for-size(tablet-landscape) {
+    margin: 0px;
+  }
+
+  @include for-size(desktop) {
+    margin: 0px;
+  }
 }
 
 .header-menu-item {

@@ -674,8 +674,8 @@ body {
 
 .icon-menu {
   position: absolute;
-  right: 22px;
-  top: 22px;
+  right: 15px;
+  top: 15px;
 }
 
 .icon-menu:hover .menu {
@@ -728,8 +728,20 @@ body {
 }
 
 .header-main-icon {
-  margin: 0px;
+  margin-top: 16px;
   padding-right: 80px;
+}
+
+@media (min-width: 768px) {
+  .header-main-icon {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-main-icon {
+    margin: 0px;
+  }
 }
 
 .header-menu-item {
@@ -866,16 +878,22 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .content-list {
-    width: calc((100% - 30px * 2) / 3);
+@media (min-width: 768px) {
+  .content-list:nth-child(odd) {
     margin-right: 30px;
   }
 }
 
-@media (min-width: 768px) {
-  .content-list:nth-child(odd) {
-    margin-right: 30px;
+@media (min-width: 1200px) {
+  .content-list {
+    width: calc((100% - 30px * 2) / 3);
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-list:nth-child(3n) {
+    margin-right: 0px;
   }
 }
 
@@ -1055,11 +1073,18 @@ address {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  left: 50%;
+  left: 25%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   margin-top: 20px;
   margin-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+  .btn-footer {
+    -webkit-transform: translate(-25%, 0);
+            transform: translate(-25%, 0);
+  }
 }
 
 .subscribe-icon {

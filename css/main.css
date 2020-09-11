@@ -1210,7 +1210,6 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: calc((100% - 30px * 5) / 6);
   }
 }
 
@@ -1356,7 +1355,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  left: 50%;
+  left: 25%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   margin-top: 20px;
@@ -1378,7 +1377,6 @@ address {
 @media (min-width: 768px) {
   .footer-form {
     display: block;
-    margin-left: 400px;
   }
 }
 
