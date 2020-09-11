@@ -20,10 +20,19 @@
             <span class="logo-word">Web</span> Studio
           </p>
           <a class="icon-menu" href="" data-menu-open>
-            <svg class="menu" width="24" height="16" viewBox="0 0 24 16"  xmlns="http://www.w3.org/2000/svg">
-              <path  clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" />
+            <svg
+              class="menu"
+              width="24"
+              height="16"
+              viewBox="0 0 24 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
+              />
             </svg>
-                      </a>
+          </a>
         </a>
         <nav class="header-nav">
           <ul class="header-list">
@@ -43,7 +52,7 @@
               <a class="header-menu-item" href="#">Контакты</a>
             </li>
           </ul>
-          <ul class="header-contact ">
+          <ul class="header-contact">
             <li class="header-menu-list">
               <a class="header-contact-item" href="#">
                 <svg class="header-icon-contact" width="16" height="12">
@@ -96,6 +105,15 @@
             <li class="content-list">
               <a class="link" href="">
                 <div class="box-foto">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/desctop/portfolio/img1.jpg    1x,
+                        ./image/desctop/portfolio/img1@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <img
                     src="./portfolio-imeg/img1.jpg"
                     alt="Технокряк"
@@ -457,7 +475,6 @@
           </form>
         </div>
       </footer>
-
     </div>
   </body>
 </html>
