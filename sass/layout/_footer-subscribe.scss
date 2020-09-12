@@ -9,6 +9,7 @@
 .footer-backgraund-dark {
   padding: 1px;
 }
+
 .footer-section {
   @include for-size(tablet-landscape) {
     display: inline-block;
@@ -38,12 +39,17 @@
   align-items: center;
   position: relative;
   left: 25%;
-  transform: translate(-50%, 0);
+  transform: translate(0%, 0);
   margin-top: 20px;
   margin-bottom: 70px;
 
   @include for-size(tablet-landscape) {
     transform: translate(-25%, 0);
+    left: 39%;
+  }
+
+  @include for-size(desktop) {
+    transform: translate(-50%, 0);
   }
 }
 
