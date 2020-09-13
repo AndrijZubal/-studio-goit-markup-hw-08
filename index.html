@@ -20,52 +20,68 @@
             <span class="logo-word">Web</span> Studio
           </p>
         </a>
-        <a class="icon-menu" href="" data-menu-open>
-          <svg
-            class="menu"
-            width="24"
-            height="16"
-            viewBox="0 0 24 16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
-            />
-          </svg>
-        </a>
+        <!-- <a class="icon-menu" href="">
+        </a> -->
         <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-menu-list">
-              <div class="header-line">
-                <a class="header-menu-item studio" href="#">Студия</a>
-              </div>
-            </li>
-            <li class="header-menu-list">
-              <a class="header-menu-item" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="header-menu-list">
-              <a class="header-menu-item" href="#">Контакты</a>
-            </li>
-          </ul>
-          <ul class="header-contact header-list">
-            <li class="header-menu-list">
-              <a class="header-contact-item" href="#">
-                <svg class="header-icon-contact" width="16" height="12">
-                  <use href="./image/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
+          <div class="icon-menu">
+            <button
+              type="button"
+              class="menu-button is-open"
+              aria-expanded="false"
+              aria-controls="menu-conteiner"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобільного меню"
               >
-            </li>
-            <li class="header-menu-list">
-              <a class="header-contact-item" href="tel:+380961111111">
-                <svg class="header-icon-contact" width="10" height="15">
-                  <use href="./image/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+                <use
+                  class="icon-burger"
+                  href="./image/symbol-defs.svg#icon-menu"
+                ></use>
+                <use
+                  class="icon-cross"
+                  href="./image/symbol-defs.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <div class="menu-conteiner is-open id=menu-conteiner" data-menu>
+            <ul class="header-list">
+              <li class="header-menu-list">
+                <div class="header-line">
+                  <a class="header-menu-item studio" href="#">Студия</a>
+                </div>
+              </li>
+              <li class="header-menu-list">
+                <a class="header-menu-item" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-menu-list">
+                <a class="header-menu-item" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="header-contact header-list">
+              <li class="header-menu-list">
+                <a class="header-contact-item" href="#">
+                  <svg class="header-icon-contact" width="16" height="12">
+                    <use href="./image/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header-menu-list">
+                <a class="header-contact-item" href="tel:+380961111111">
+                  <svg class="header-icon-contact" width="10" height="15">
+                    <use href="./image/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -301,8 +317,8 @@
                     class="team-foto"
                     src="./image/foto/igor.jpg"
                     alt="Игорь Демьяненко"
-                    width="270"
-                    height="260"
+                    width="420"
+                    height="460"
                   />
                 </picture>
 
@@ -391,8 +407,8 @@
                     class="team-foto"
                     src="./image/foto/olga.jpg"
                     alt=" Ольга Репина "
-                    width="270"
-                    height="260"
+                    width="420"
+                    height="460"
                   />
                 </picture>
 
@@ -480,8 +496,8 @@
                     class="team-foto"
                     src="./image/foto/nicolaj.jpg"
                     alt="Николай Тарасов"
-                    width="270"
-                    height="260"
+                    width="420"
+                    height="460"
                   />
                 </picture>
 
@@ -569,8 +585,8 @@
                     class="team-foto"
                     src="./image/foto/mic.jpg"
                     alt="Михаил Ермаков"
-                    width="270"
-                    height="260"
+                    width="420"
+                    height="460"
                   />
                 </picture>
 
@@ -875,7 +891,7 @@
       </div>
     </div>
     <!-- Модал меню -->
-    <div class="bagdrop is-hidden" data-menu>
+    <!-- <div class="bagdrop is-hidden" data-menu>
       <div class="modal-menu">
         <button class="btn-close" data-menu-close>
           <svg
@@ -932,7 +948,7 @@
           </ul>
         </nav>
       </div>
-    </div>
+    </div> -->
     <script src="./js/menu.js"></script>
 
     <script src="./js/modal.js"></script>
