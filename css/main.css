@@ -1081,12 +1081,6 @@ h3 {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .ocupation-item {
-    width: 270px;
-  }
-}
-
 @media (min-width: 1200px) {
   .ocupation-item:not(:last-child) {
     margin-right: 30px;
@@ -1137,13 +1131,14 @@ h3 {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media (min-width: 768px) {
-  .team-list:nth-child(odd) {
+@media (min-width: 1200px) {
+  .team-list {
     margin-right: 30px;
+    width: 260px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .team-list:nth-child(odd) {
     margin-right: 30px;
   }
