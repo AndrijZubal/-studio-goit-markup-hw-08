@@ -22,67 +22,105 @@
         </a>
         <!-- <a class="icon-menu" href="">
         </a> -->
-        <nav class="header-nav">
-          <div class="icon-menu">
-            <button
-              type="button"
-              class="menu-button is-open"
-              aria-expanded="false"
-              aria-controls="menu-conteiner"
-              data-menu-button
-            >
-              <svg
-                width="40"
-                height="40"
-                aria-label="Переключатель мобільного меню"
+        <nav class="header-nav header-main-nav">
+          <ul class="header-list">
+            <li class="header-menu-list">
+              <div class="header-line">
+                <a class="header-menu-item studio" href="#">Студия</a>
+              </div>
+            </li>
+            <li class="header-menu-list">
+              <a class="header-menu-item" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-menu-list">
+              <a class="header-menu-item" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="header-contact header-list">
+            <li class="header-menu-list">
+              <a class="header-contact-item" href="#">
+                <svg class="header-icon-contact" width="16" height="12">
+                  <use href="./image/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
               >
-                <use
-                  class="icon-burger"
-                  href="./image/symbol-defs.svg#icon-menu"
-                ></use>
-                <use
-                  class="icon-cross"
-                  href="./image/symbol-defs.svg#icon-close"
-                ></use>
-              </svg>
-            </button>
-          </div>
-          <div class="menu-conteiner is-open id=menu-conteiner" data-menu>
-            <ul class="header-list">
-              <li class="header-menu-list">
-                <div class="header-line">
-                  <a class="header-menu-item studio" href="#">Студия</a>
-                </div>
-              </li>
-              <li class="header-menu-list">
-                <a class="header-menu-item" href="./portfolio.html"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="header-menu-list">
-                <a class="header-menu-item" href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="header-contact header-list">
-              <li class="header-menu-list">
-                <a class="header-contact-item" href="#">
-                  <svg class="header-icon-contact" width="16" height="12">
-                    <use href="./image/sprite.svg#icon-mail"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="header-menu-list">
-                <a class="header-contact-item" href="tel:+380961111111">
-                  <svg class="header-icon-contact" width="10" height="15">
-                    <use href="./image/sprite.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
+            </li>
+            <li class="header-menu-list">
+              <a class="header-contact-item" href="tel:+380961111111">
+                <svg class="header-icon-contact" width="10" height="15">
+                  <use href="./image/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </nav>
+        <div class="durger-conteiner">
+          <nav class="header-nav burger">
+            <div class="icon-menu">
+              <button
+                type="button"
+                class="menu-button is-open"
+                aria-expanded="false"
+                aria-controls="menu-conteiner"
+                data-menu-button
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобільного меню"
+                >
+                  <use
+                    class="icon-burger"
+                    href="./image/symbol-defs.svg#icon-menu"
+                  ></use>
+                  <use
+                    class="icon-cross"
+                    href="./image/symbol-defs.svg#icon-close"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="menu-conteiner is-hidden is-open id=menu-conteiner"
+              data-menu
+            >
+              <ul class="header-list">
+                <li class="header-menu-list">
+                  <div class="header-line">
+                    <a class="header-menu-item studio" href="#">Студия</a>
+                  </div>
+                </li>
+                <li class="header-menu-list">
+                  <a class="header-menu-item" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="header-menu-list">
+                  <a class="header-menu-item" href="#">Контакты</a>
+                </li>
+              </ul>
+              <ul class="header-contact header-list">
+                <li class="header-menu-list">
+                  <a class="header-contact-item" href="#">
+                    <svg class="header-icon-contact" width="16" height="12">
+                      <use href="./image/sprite.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="header-menu-list">
+                  <a class="header-contact-item" href="tel:+380961111111">
+                    <svg class="header-icon-contact" width="10" height="15">
+                      <use href="./image/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
