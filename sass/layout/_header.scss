@@ -29,14 +29,18 @@
 }
 
 .header-contact {
+  @media screen and (min-width: 768px) {
+    margin-left: 65px;
+  }
   @media screen and (max-width: 1199px) {
     display: block;
     padding: 0px;
-    margin: 0px;
+    // margin: 0px;
     list-style: none;
   }
+
   @media screen and (min-width: 1200px) {
-    margin-left: 200px;
+    margin-left: 50px;
   }
 }
 
@@ -44,7 +48,7 @@
   position: relative;
   top: 16px;
   margin: 0px;
-  padding-right: 80px;
+  padding-right: 30px;
 }
 
 .header-menu-item {
@@ -145,6 +149,10 @@
 }
 
 .menu-conteiner {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 100%;
@@ -164,7 +172,7 @@
     @media screen and (max-width: 767px) {
       display: block;
       transform: translateX(0);
-      // z-index: 100;
+      z-index: 100;
     }
   }
 }

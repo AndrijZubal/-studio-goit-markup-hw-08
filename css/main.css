@@ -757,18 +757,23 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-contact {
+    margin-left: 65px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .header-contact {
     display: block;
     padding: 0px;
-    margin: 0px;
     list-style: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header-contact {
-    margin-left: 200px;
+    margin-left: 50px;
   }
 }
 
@@ -776,7 +781,7 @@ h3 {
   position: relative;
   top: 16px;
   margin: 0px;
-  padding-right: 80px;
+  padding-right: 30px;
 }
 
 .header-menu-item {
@@ -893,6 +898,14 @@ h3 {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .menu-conteiner {
     position: absolute;
@@ -917,6 +930,7 @@ h3 {
     display: block;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    z-index: 100;
   }
 }
 
@@ -924,6 +938,10 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.hero {
+  margin: auto;
 }
 
 .hero-title {
