@@ -27,6 +27,7 @@
 
   @include for-size(tablet-landscape) {
     width: 768px;
+    display: flex;
   }
 
   @include for-size(desktop) {
